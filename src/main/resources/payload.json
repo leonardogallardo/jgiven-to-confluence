@@ -1,0 +1,11 @@
+{
+  "type":"page",
+  "title":"Cenários automatizados - relatório",
+  "version":{"number":#(version)},
+  "body":{
+    "storage":{
+      "value":"#(content)",
+      "representation":"storage"
+    }
+  }
+}

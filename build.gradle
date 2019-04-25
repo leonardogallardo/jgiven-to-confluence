@@ -32,3 +32,9 @@ compileTestKotlin {
 test {
     useJUnitPlatform()
 }
+
+task fatJar(type: Jar) {
+    classifier = 'all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
